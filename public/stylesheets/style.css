@@ -19,7 +19,7 @@ h1 {
   margin: 10px auto 40px;
   width: 90vw;
   height: 50dvh;
-  overflow-y: auto;
+  overflow-y: auto; 
 }
 
 form {
