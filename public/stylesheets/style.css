@@ -34,8 +34,13 @@ label {
   justify-content: space-between;
 }
 
+input {
+  font-size: 24px;
+}
+
 button{ 
-  padding: 10px 30px;
-  max-width: 100px;
+  padding: 10px 50px;
+  max-width: 200px;
   margin: auto;
+  font-size: 24px;
 }
