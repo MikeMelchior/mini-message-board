@@ -1,6 +1,6 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 24px monospace;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,10 +13,11 @@ h1 {
 
 .container {
   border: black 2px solid;
+  background-color: rgb(206, 231, 252);
   border-radius: 5px;
   padding: 10px;
   margin: 10px auto 40px;
-  width: 300px;
+  width: 90vw;
   height: 50dvh;
   overflow-y: auto;
 }
@@ -25,7 +26,6 @@ form {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 350px;
   justify-content: center;
 }
 
