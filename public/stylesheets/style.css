@@ -1,8 +1,39 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-a {
-  color: #00B7FF;
+h1 {
+  color: rgb(140, 20, 20);
+  font-family: monospace;
+}
+
+.container {
+  border: black 2px solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px auto 40px;
+  width: 300px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+  justify-content: center;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+}
+
+button{ 
+  padding: 10px 30px;
+  max-width: 100px;
+  margin: auto;
 }
