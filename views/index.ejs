@@ -3,6 +3,7 @@
     <head>
         <title><MAIDENLESS></title>
         <link rel="stylesheet" href="/stylesheets/style.css" />
+        <script src="/javascripts/index.js" defer></script>
     </head>
     <body>
         <h1>MAIDENLESS</h1>
@@ -10,7 +11,7 @@
         <div class="container">
             <% if (messages.length) { %> <% messages.forEach(message => { %>
             <p>
-                <%= message.user%>: <%= message.text %>
+                <%= message.user%> ~ <%= message.text %>
             </p>
             <% }) %> <% } else { %>
             <p>No messages.</p>
@@ -20,12 +21,12 @@
         <form method="POST" action="/">
             <label for="name">
                 Name:
-                <input type="text" name="name" id="name" />
+                <input type="text" name="name" id="name" value="<%= name %>"/>
             </label>
             <br />
             <label for="message">
                 Message:
-                <input type="text" name="message" id="message" />
+                <input type="text" name="message" id="message"/>
             </label>
             <br />
             <button type="submit">Post</button>
