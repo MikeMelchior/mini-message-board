@@ -5,7 +5,16 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+
+    <p>Messages:</p>
+    <% messages.forEach(message => { %>
+      <li>
+        <%= message.user%>: <%= message.text %>
+        <p></p>
+      </li>
+    <% }) %>
+
+    <a href="/new">Add a new message!</a>
   </body>
 </html>
